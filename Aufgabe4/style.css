@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.background{
+    
+    background-image: url("../Aufgabe4/image1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 400px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+nav{
+    
+}
