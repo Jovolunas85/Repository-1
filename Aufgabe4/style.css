@@ -83,11 +83,39 @@ footer{
 
 #name1{
     background-color: rgb(100, 100, 100);
+    color: white;
+    cursor:auto;
+    width: 400px;
 }
 #email2{
     background-color: rgb(100, 100, 100);
+    color: white;
+    cursor:auto;
+    width: 400px;
 }
 #message3{
     background-color: rgb(100, 100, 100);
+    color: white;
+    cursor:auto;
+    width: 400px;
+    height: 150px;
+    
+}
+textarea::placeholder{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+textarea{
+    resize: none;
+}
+input{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    cursor: pointer;
+    
+}
+#discord{
+    
 }
 
