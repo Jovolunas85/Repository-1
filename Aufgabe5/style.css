@@ -11,18 +11,26 @@ header{
 
 }
 .background{
-    
-    background-image: url("../Aufgabe4/background.jpg");
+    animation-name: ChangeBackground;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-image: url("../Aufgabe5/background.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     height: 400px;
     width: 100%;
-    
+
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     
 }
+
+@keyframes ChangeBackground{
+    0%, 100% {background-image: url("../Aufgabe5/background.jpg");}
+    25% {background-image: url("../Aufgabe5/background2.jpg");}
+}
+
 
 .body{
     display: flex;
@@ -67,6 +75,13 @@ a{
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     scale: 120%;
+
+}
+
+#fixedimage{
+    position: fixed;
+    right: 100px;
+    z-index: 2;
 }
 
 
