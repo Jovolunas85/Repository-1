@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+head{
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.background{
+    
+    background-image: url("../Aufgabe4/background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 400px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    
+}
+
+.body2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+.body3{
+    margin: 100px;
+    
+}
+
+nav{
+    margin: 10px;
+
+}
+
+a{
+    color: gray;
+}
+#fa{
+    color: black;
+    font-size: 30px;
+}
+
+.Bild img:hover{
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    scale: 120%;
+}
+
+
+a:hover {
+    color: white;
+}
+
+footer{
+    background-color: rgb(219, 219, 219);
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#name1{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    cursor:auto;
+    width: 400px;
+}
+#email2{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    cursor:auto;
+    width: 400px;
+}
+#message3{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    cursor:auto;
+    width: 400px;
+    height: 150px;
+    
+}
+textarea::placeholder{
+    color: white;
+   
+}
+textarea{
+    resize: none;
+}
+input{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    cursor: pointer;
+    
+}
+.discord a{
+    opacity: 0.5;
+}
+
+
+.discord  a:hover{
+    opacity: 1;
+}
