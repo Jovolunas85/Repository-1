@@ -28,7 +28,7 @@ header{
 
 @keyframes ChangeBackground{
     0%, 100% {background-image: url("../Aufgabe5/background.jpg");}
-    25% {background-image: url("../Aufgabe5/background2.jpg");}
+    50% {background-image: url("../Aufgabe5/background2.jpg");}
 }
 
 
