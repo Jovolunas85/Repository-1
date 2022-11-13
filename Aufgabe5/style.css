@@ -31,6 +31,10 @@ header{
     50% {background-image: url("../Aufgabe5/background2.jpg");}
 }
 
+#fixedimage{
+    padding-top: 30px;
+}
+
 
 .body{
     display: flex;
