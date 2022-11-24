@@ -29,13 +29,14 @@ function myFunction(Land2022:number, Land2008:number, Laendername:String){
     document.querySelector("#txt").innerHTML = "Einwohnerzahl von " + Laendername; 
     document.querySelector("#Einwohnerzahl").innerHTML = Land2022.toString();
     document.querySelector("#Einwohnerzahl2").innerHTML = "Gesamtzahl Einwohnerinnen und Einwohner in "+ Laendername +" in 2022";
-    document.querySelector("#AnteilEU").innerHTML = Anteil+"%";
-    document.querySelector("#Wachstrumsrate2008").innerHTML = Wachstumsrate+"%";
-    document.querySelector("#Wachstum2008").innerHTML = Wachstum+" Mio.";
+    document.querySelector("#AnteilEU").innerHTML = Anteil.toFixed(2)+"%";
+    document.querySelector("#Wachstrumsrate2008").innerHTML = Wachstumsrate.toFixed(2)+"%";
+    document.querySelector("#Wachstum2008").innerHTML = Wachstum.toFixed(2)+" Mio.";
+    document.querySelector(".chart").setAttribute('style','height:'+Anteil.toFixed(0)+"%");
 }
 
 document.querySelector("#wrapper1").addEventListener('click',function() {myFunction(germany, deutschland, "Deutschland");});
 document.querySelector("#wrapper11").addEventListener('click',function() {myFunction(france, frankreich, "Frankreich");});
 document.querySelector("#wrapper15").addEventListener('click',function() {myFunction(italy, italien, "Italien");});
 document.querySelector("#wrapper27").addEventListener('click',function() {myFunction(sweden, schweden, "Schweden");});
-}
+}   

@@ -45,7 +45,7 @@ footer p {
 
 .chartWrapper {
     position: relative;
-    display: inline-block;
+    display: inline-block   ;
     width: 50px;
     height: 140px;
     background: #ffffff80;
@@ -55,6 +55,6 @@ footer p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 75%;
+    height: 100%;
     background: #ffcc00;
 }
