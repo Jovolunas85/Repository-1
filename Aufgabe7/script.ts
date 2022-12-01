@@ -11,6 +11,7 @@ const deutschland = 82.11;
 const frankreich = 64.37;
 const italien = 58.83;
 const schweden = 9.22;
+const eu2008 = 500;
 
 console.log("Die Einwohnerzahl Deutschlands betrug im Jahr 2022: " + germany + " Mio. Das beträgt " + germany/europeanunion*100 +"% der gesamten Einwohnerzahl der EU. Die Wachstumsrate seit 2008 betraegt: "+ ((germany/deutschland)-1)*100+ "%. Die gesamte Wachstumsrate ist somit: "+ (germany-deutschland)+ " Mio.");
 console.log("Die Einwohnerzahl Frankreichs betrug im Jahr 2022: " + france + " Mio. Das beträgt " + france/europeanunion*100 +"% der gesamten Einwohnerzahl der EU. Die Wachstumsrate seit 2008 betraegt: "+ ((france/frankreich)-1)*100+ "%. Die gesamte Wachstumsrate ist somit: "+ (france-frankreich)+ " Mio.");
@@ -39,4 +40,5 @@ document.querySelector("#wrapper1").addEventListener('click',function() {myFunct
 document.querySelector("#wrapper11").addEventListener('click',function() {myFunction(france, frankreich, "Frankreich");});
 document.querySelector("#wrapper15").addEventListener('click',function() {myFunction(italy, italien, "Italien");});
 document.querySelector("#wrapper27").addEventListener('click',function() {myFunction(sweden, schweden, "Schweden");});
+document.querySelector(".stars").addEventListener('click',function() {myFunction(europeanunion, eu2008, "der europäischen Union");});
 }   
