@@ -1,21 +1,21 @@
 namespace A9 {
-    var sound1:HTMLAudioElement = new Audio('./assets/Keyboard/c.mp3');
-    var sound2:HTMLAudioElement = new Audio('./assets/Keyboard/df.mp3');
-    var sound3:HTMLAudioElement = new Audio('./assets/Keyboard/d.mp3');
-    var sound4:HTMLAudioElement = new Audio('./assets/Keyboard/ef.mp3');
-    var sound5:HTMLAudioElement = new Audio('./assets/Keyboard/e.mp3');
-    var sound6:HTMLAudioElement = new Audio('./assets/Keyboard/f.mp3');
-    var sound7:HTMLAudioElement = new Audio('./assets/Keyboard/gf.mp3');
-    var sound8:HTMLAudioElement = new Audio('./assets/Keyboard/g.mp3');
-    var sound9:HTMLAudioElement = new Audio('./assets/Keyboard/af.mp3');
-    var sound10:HTMLAudioElement = new Audio('./assets/Keyboard/a.mp3');
-    var sound11:HTMLAudioElement = new Audio('./assets/Keyboard/bf.mp3');
-    var sound12:HTMLAudioElement = new Audio('./assets/Keyboard/b.mp3');
+    let sound1:HTMLAudioElement = new Audio('./assets/Keyboard/c.mp3');
+    let sound2:HTMLAudioElement = new Audio('./assets/Keyboard/df.mp3');
+    let sound3:HTMLAudioElement = new Audio('./assets/Keyboard/d.mp3');
+    let sound4:HTMLAudioElement = new Audio('./assets/Keyboard/ef.mp3');
+    let sound5:HTMLAudioElement = new Audio('./assets/Keyboard/e.mp3');
+    let sound6:HTMLAudioElement = new Audio('./assets/Keyboard/f.mp3');
+    let sound7:HTMLAudioElement = new Audio('./assets/Keyboard/gf.mp3');
+    let sound8:HTMLAudioElement = new Audio('./assets/Keyboard/g.mp3');
+    let sound9:HTMLAudioElement = new Audio('./assets/Keyboard/af.mp3');
+    let sound10:HTMLAudioElement = new Audio('./assets/Keyboard/a.mp3');
+    let sound11:HTMLAudioElement = new Audio('./assets/Keyboard/bf.mp3');
+    let sound12:HTMLAudioElement = new Audio('./assets/Keyboard/b.mp3');
     let count = 0;
     let play = document.querySelector("#play");
     let stop = document.querySelector("#stop");
-    var audio:HTMLAudioElement[] = [sound1, sound4, sound11, sound9, sound5];
-    var audio2:HTMLAudioElement[] = [sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9, sound10, sound11, sound12];
+    let audio:HTMLAudioElement[] = [sound1, sound4, sound11, sound9, sound5];
+    let audio2:HTMLAudioElement[] = [sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9, sound10, sound11, sound12];
     let myInterval
     document.querySelector("#play").addEventListener('click',function() {
         play.classList.add('hidden');
@@ -36,8 +36,10 @@ namespace A9 {
         clearInterval(myInterval);
     })
 
-    document.querySelector("#stop").addEventListener('click',function() {
-        
+    document.querySelector("#remix").addEventListener('click',function() {
+        for(let i = 0; i < audio.length; i++){
+            audio[i]= audio2[Math.floor(Math.random()*12)];
+        }
     })
 
     function playSample(hdhb){

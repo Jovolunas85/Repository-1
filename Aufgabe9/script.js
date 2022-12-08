@@ -1,22 +1,22 @@
 var A9;
 (function (A9) {
-    var sound1 = new Audio('./assets/Keyboard/c.mp3');
-    var sound2 = new Audio('./assets/Keyboard/df.mp3');
-    var sound3 = new Audio('./assets/Keyboard/d.mp3');
-    var sound4 = new Audio('./assets/Keyboard/ef.mp3');
-    var sound5 = new Audio('./assets/Keyboard/e.mp3');
-    var sound6 = new Audio('./assets/Keyboard/f.mp3');
-    var sound7 = new Audio('./assets/Keyboard/gf.mp3');
-    var sound8 = new Audio('./assets/Keyboard/g.mp3');
-    var sound9 = new Audio('./assets/Keyboard/af.mp3');
-    var sound10 = new Audio('./assets/Keyboard/a.mp3');
-    var sound11 = new Audio('./assets/Keyboard/bf.mp3');
-    var sound12 = new Audio('./assets/Keyboard/b.mp3');
+    let sound1 = new Audio('./assets/Keyboard/c.mp3');
+    let sound2 = new Audio('./assets/Keyboard/df.mp3');
+    let sound3 = new Audio('./assets/Keyboard/d.mp3');
+    let sound4 = new Audio('./assets/Keyboard/ef.mp3');
+    let sound5 = new Audio('./assets/Keyboard/e.mp3');
+    let sound6 = new Audio('./assets/Keyboard/f.mp3');
+    let sound7 = new Audio('./assets/Keyboard/gf.mp3');
+    let sound8 = new Audio('./assets/Keyboard/g.mp3');
+    let sound9 = new Audio('./assets/Keyboard/af.mp3');
+    let sound10 = new Audio('./assets/Keyboard/a.mp3');
+    let sound11 = new Audio('./assets/Keyboard/bf.mp3');
+    let sound12 = new Audio('./assets/Keyboard/b.mp3');
     let count = 0;
     let play = document.querySelector("#play");
     let stop = document.querySelector("#stop");
-    var audio = [sound1, sound4, sound11, sound9, sound5];
-    var audio2 = [sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9, sound10, sound11, sound12];
+    let audio = [sound1, sound4, sound11, sound9, sound5];
+    let audio2 = [sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9, sound10, sound11, sound12];
     let myInterval;
     document.querySelector("#play").addEventListener('click', function () {
         play.classList.add('hidden');
@@ -36,7 +36,10 @@ var A9;
         play.classList.remove('hidden');
         clearInterval(myInterval);
     });
-    document.querySelector("#stop").addEventListener('click', function () {
+    document.querySelector("#remix").addEventListener('click', function () {
+        for (let i = 0; i < audio.length; i++) {
+            audio[i] = audio2[Math.floor(Math.random() * 12)];
+        }
     });
     function playSample(hdhb) {
         hdhb.play();
