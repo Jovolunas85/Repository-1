@@ -15,11 +15,13 @@ namespace A9 {
     let play = document.querySelector("#play");
     let stop = document.querySelector("#stop");
     var audio:HTMLAudioElement[] = [sound1, sound4, sound11, sound9, sound5];
+    var audio2:HTMLAudioElement[] = [sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9, sound10, sound11, sound12];
+    let myInterval
     document.querySelector("#play").addEventListener('click',function() {
         play.classList.add('hidden');
         stop.classList.remove('hidden');
-        setInterval(function() {
-            audio[count].play();
+        myInterval=setInterval(() =>{
+            playSample(audio[count]);   
             if (count==4){
                 count=0;
             } 
@@ -31,11 +33,12 @@ namespace A9 {
     document.querySelector("#stop").addEventListener('click',function() {
         stop.classList.add('hidden');
         play.classList.remove('hidden');
-            audio[count].pause();
-            audio[count].currentTime = 0;
-        
+        clearInterval(myInterval);
     })
 
+    document.querySelector("#stop").addEventListener('click',function() {
+        
+    })
 
     function playSample(hdhb){
         hdhb.play();
@@ -53,4 +56,6 @@ namespace A9 {
     document.querySelector("#bf").addEventListener('click',function() {playSample(sound11);});
     document.querySelector("#b").addEventListener('click',function() {playSample(sound12);});
     
+
+
 }
