@@ -13,19 +13,13 @@
     <h1>ToDo App</h1>
     <p id="total">0 in Total</p>
     <div id="input2">
-    <input placeholder="Add another Task" id="input"> 
+    <input placeholder="Add another Task" id="input">
+    <span onclick="newElement()" class="addBtn">Add</span>
     </div>
-    <div id="tasks"> 
-        
-        <div class="task">  
-            <div class="content">
-                <input type="text" class="text" value="Mach das!" readonly>
-            </div>
-            <div class="actions">
-                <button class="done"> done?</button>
-                <button class="delete">delete</button>
-            </div>
-        </div>
-    </div>
+    <ul id="Liste">
+        <li>Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>Meet George</li>
+    </ul>
 </body>
 </html>
