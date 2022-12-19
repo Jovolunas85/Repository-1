@@ -27,8 +27,16 @@ h1{
 #tasks{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #input2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zaehler{
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
