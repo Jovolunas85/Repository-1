@@ -14,26 +14,32 @@ namespace A10 {
             newP.innerHTML= text.value;
             newDiv.appendChild(newP);
         
-        newTrash.className ="fa fa-trash-alt";
-        const newCheck = document.createElement("span");
-        newCheck.innerHTML='<input type="checkbox">'
+            newTrash.className ="fa fa-trash-alt";
+            const newCheck = document.createElement("span");
+            newCheck.innerHTML='<input type="checkbox">'
 
-        newP.appendChild(newCheck);
-        newP.appendChild(newTrash);
-        wrapper.appendChild(newDiv);
+            newP.appendChild(newCheck);
+            newP.appendChild(newTrash);
+            wrapper.appendChild(newDiv);
+    }
+    else{
+        alert("Please enter a task");
+        return;
     }
         newTrash.addEventListener("click", function(){
             wrapper.removeChild(newDiv);
             counter--;
             document.querySelector('#total').innerHTML = String(counter);
         })
+    
+        counter++;
+        document.querySelector('#total').innerHTML = String(counter);
+    
     }
     
     document.querySelector(".tasks").addEventListener('keypress',function(e:KeyboardEvent){
         if(e.key === 'Enter'){
             create_todo();
-            counter++;
-            document.querySelector('#total').innerHTML = String(counter);
         }
     }
     )

@@ -18,17 +18,21 @@ var A10;
             newP.appendChild(newTrash);
             wrapper.appendChild(newDiv);
         }
+        else {
+            alert("Please enter a task");
+            return;
+        }
         newTrash.addEventListener("click", function () {
             wrapper.removeChild(newDiv);
             counter--;
             document.querySelector('#total').innerHTML = String(counter);
         });
+        counter++;
+        document.querySelector('#total').innerHTML = String(counter);
     }
     document.querySelector(".tasks").addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             create_todo();
-            counter++;
-            document.querySelector('#total').innerHTML = String(counter);
         }
     });
 })(A10 || (A10 = {}));
