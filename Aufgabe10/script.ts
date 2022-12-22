@@ -13,7 +13,7 @@ namespace A10 {
             const newP= document.createElement("p");
             newP.innerHTML= text.value;
             newDiv.appendChild(newP);
-        
+            text.value = "";
             newTrash.className ="fa fa-trash-alt";
             const newCheck = document.createElement("span");
             newCheck.innerHTML='<input type="checkbox">'

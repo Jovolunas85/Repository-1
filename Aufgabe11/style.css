@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(203, 203, 203);
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+}
+#total{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    display: flex;
+    justify-content: space-around;
+}
+#total2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    display: flex;
+    justify-content: space-around;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 3%;
+}
